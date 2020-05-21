@@ -15,7 +15,7 @@ class WordPressLogin():
 
     def login(self, username, password):
         headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.4086.0 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4086.0 Safari/537.36",
             "Referer": self.csrf_url
         }
 
