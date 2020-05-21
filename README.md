@@ -27,7 +27,7 @@ optional arguments:
 
 ---
 
-### Currently Supported Tools
+### Currently Supported CMS/Admin logins
 
 #### Django
 
