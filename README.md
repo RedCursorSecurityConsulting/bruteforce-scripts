@@ -36,3 +36,7 @@ Django bruteforce script. (Usually login url is the same as csrf url).
 #### Squiz Matrix
 
 Squiz Matrix bruteforce script. (Needs different login/csrf urls and login url requires a SQ_ACTION=login parameter).
+
+#### WordPress
+
+WordPress bruteforce script. (WordPress login has no CSRF/nonce without a plugin).
