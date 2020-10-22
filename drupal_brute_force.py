@@ -34,10 +34,10 @@ class DrupalLogin():
 
         response = self.session.post(self.login_url, data=data, allow_redirects=False)
 
-        if "Unrecognised username or password" in response.text:
-            return Attempt.Failed
+        if response.status_code == 303:
+            return Attempt.Success
 
-        return Attempt.Success
+        return Attempt.Failed
 
 if __name__ == '__main__':
     main(DrupalLogin)
