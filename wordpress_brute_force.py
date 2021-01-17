@@ -22,13 +22,15 @@ class WordPressLogin():
         data = {
             "log": username,
             "pwd": password,
-            "wp-submit": "Log+In",
+            "wp-submit": "Log+In"
         }
 
         response = self.session.post(self.login_url, headers=headers, data=data)
 
         bad_patterns = [
-                "is incorrect."
+                "is incorrect.",
+                "Unknown username",
+                "not quite correct"
         ]
 
         for pattern in bad_patterns:
